@@ -1,121 +1,53 @@
-body {
-  font-family: 'Barlow Condensed';
-  background-color: red;
-  // background-color: #ecebeb;
-}
-
-/*=============================================
-=                 Header top                  =
-=============================================*/
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+// LOGO
+nav.navbar {
+  display: block;
+  background-color: #fff;
+  padding: 0;
+  padding-bottom: 1rem;
   h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
-    color: black;
-    font-family: 'Mansalva', cursive;
-    background-color: $primary;
-    box-shadow: 2px 2px 5px #a8a8a8;
-
-    img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .logo-connect {
-      margin-left: 2rem;
-    }
-  }
-
-// NAVBAR
-  .header-navbar ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-
-    li {
-      margin: 20px 10px;
-
-      p {
-        font-size: 1.1rem;
-        margin: 0;
-      }
-
-      .active {
-        background-color: #464646 !important;
-        color: #ecebeb !important;
-        border: none;
-      }
-    }
+    background-color: $success;
+    color: #fff;
+    text-align: center;
   }
 }
+// Centrer buttons
+.navbar-collapse {
+    justify-content: center;
+}
 
-/*=============================================
-=                     Main                    =
-=============================================*/
-main {
-  overflow-x: auto;
+// Colonnes
+.card-column {
+  article {
+    background-color: rgb(214, 214, 214);
+    color: rgb(22, 20, 20);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
 
-  .container {
-    padding: 0;
+    .views-field-title {
+      display: flex;
+      justify-content: center;
 
-    h2 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: $primary;
+      span.field-content {
+        a {
+          color: rgb(22, 20, 20);
+        }
+      }
     }
 
-    .row {
-      flex-wrap: nowrap;
+    .views-field-field-reponse {
+      display: none;
+    }
 
-      section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    div.field-content {
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+    }
 
-        @include media-breakpoint-down(sm) {
-          width: 100vw;
-        }
-      
-        h3 {
-          font-weight: bold;
-          font-size: 1.5rem;
-        }
-
-// CARD (article)
-        .card {
-          text-align: center;
-          margin: 10px 0;
-          padding: 15px 5px;
-          min-width: 250px;
-          background-color: $primary;
-          border: 2px solid #d3d3d3;
-          box-shadow: 3px 3px 5px #a8a8a8;
-      
-          h4 {
-            font-size: 1.4rem;
-          }
-      
-          .card-body {
-            padding: 0;
-      
-            p {
-              border-left: 2px double $secondary;
-              font-size: 1.2rem;
-            }
-      
-            button {
-              margin: 0 5px;
-            }
-          }
-        }
+    &:hover {
+      // Réponse qui apparaît au survole
+      .views-field-field-reponse {
+        display: block;
       }
     }
   }
