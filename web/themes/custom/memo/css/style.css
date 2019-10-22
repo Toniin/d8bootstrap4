@@ -7464,86 +7464,36 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-body {
-  font-family: 'Barlow Condensed';
-  background-color: red; }
+nav.navbar {
+  display: block;
+  background-color: #fff;
+  padding: 0;
+  padding-bottom: 1rem; }
+  nav.navbar h1 {
+    background-color: #048a40;
+    color: #fff;
+    text-align: center; }
 
-/*=============================================
-=                 Header top                  =
-=============================================*/
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  header h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
-    color: black;
-    font-family: 'Mansalva', cursive;
-    background-color: #cfcfcf;
-    box-shadow: 2px 2px 5px #a8a8a8; }
-    header h1 img {
-      width: 40px;
-      height: 40px; }
-    header h1 .logo-connect {
-      margin-left: 2rem; }
-  header .header-navbar ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none; }
-    header .header-navbar ul li {
-      margin: 20px 10px; }
-      header .header-navbar ul li p {
-        font-size: 1.1rem;
-        margin: 0; }
-      header .header-navbar ul li .active {
-        background-color: #464646 !important;
-        color: #ecebeb !important;
-        border: none; }
+.navbar-collapse {
+  justify-content: center; }
 
-/*=============================================
-=                     Main                    =
-=============================================*/
-main {
-  overflow-x: auto; }
-  main .container {
-    padding: 0; }
-    main .container h2 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: #cfcfcf; }
-    main .container .row {
-      flex-wrap: nowrap; }
-      main .container .row section {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        @media (max-width: 767.98px) {
-          main .container .row section {
-            width: 100vw; } }
-        main .container .row section h3 {
-          font-weight: bold;
-          font-size: 1.5rem; }
-        main .container .row section .card {
-          text-align: center;
-          margin: 10px 0;
-          padding: 15px 5px;
-          min-width: 250px;
-          background-color: #cfcfcf;
-          border: 2px solid #d3d3d3;
-          box-shadow: 3px 3px 5px #a8a8a8; }
-          main .container .row section .card h4 {
-            font-size: 1.4rem; }
-          main .container .row section .card .card-body {
-            padding: 0; }
-            main .container .row section .card .card-body p {
-              border-left: 2px double #3c4245;
-              font-size: 1.2rem; }
-            main .container .row section .card .card-body button {
-              margin: 0 5px; }
+.card-column article {
+  background-color: #d6d6d6;
+  color: #161414;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px; }
+  .card-column article .views-field-title {
+    display: flex;
+    justify-content: center; }
+    .card-column article .views-field-title span.field-content a {
+      color: #161414; }
+  .card-column article .views-field-field-reponse {
+    display: none; }
+  .card-column article div.field-content {
+    text-overflow: ellipsis;
+    word-wrap: break-word; }
+  .card-column article:hover .views-field-field-reponse {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */
