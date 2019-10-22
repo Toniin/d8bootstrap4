@@ -1,0 +1,20 @@
+uuid: db468813-d4c1-40c0-8392-4a61898474d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.card
+  module:
+    - user
+id: node.card.teaser
+targetEntityType: node
+bundle: card
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

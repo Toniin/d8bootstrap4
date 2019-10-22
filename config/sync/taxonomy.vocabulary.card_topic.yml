@@ -1,0 +1,8 @@
+uuid: 5905ff34-af88-4ca1-a9a6-0243b81bd056
+langcode: en
+status: true
+dependencies: {  }
+name: 'card topic'
+vid: card_topic
+description: ''
+weight: 0

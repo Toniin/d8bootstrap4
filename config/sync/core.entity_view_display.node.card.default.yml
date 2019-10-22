@@ -1,0 +1,46 @@
+uuid: 27aa30d9-1d6e-463e-9fa4-9cb3fc648b28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.card.field_column
+    - field.field.node.card.field_reponse
+    - field.field.node.card.field_topic
+    - node.type.card
+  module:
+    - user
+id: node.card.default
+targetEntityType: node
+bundle: card
+mode: default
+content:
+  field_column:
+    weight: 103
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_reponse:
+    weight: 102
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_topic:
+    weight: 104
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

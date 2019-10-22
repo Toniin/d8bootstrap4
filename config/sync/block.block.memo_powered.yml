@@ -1,0 +1,22 @@
+uuid: 3c41573b-756e-44da-a1ee-a301a46d023b
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - memo
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: memo_powered
+theme: memo
+region: footer_fifth
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
